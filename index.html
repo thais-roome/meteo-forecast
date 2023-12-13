@@ -5,35 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteo forecast</title>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <form action="">
-        <input type="search" placeholder="Enter the city..." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>London</h1>
-        <p>
-          Wednesday, 11:50, cloudy day
-          <br />
-          humidity: 66%, wind: 3.13km/h
-        </p>
-      </div>
-      <div>☁️ 12°C</div>
-    </main>
-    <footer>
-      Coded by <a href="https://github.com/thais-roome">Thais Roome,</a>
-      <a href="https://github.com/thais-roome/meteo-forecast">
-        open-sourced on GitHub</a
-      >
-      and
-      <a
-        href="https://app.netlify.com/sites/meteo-forecast-weatherapp/configuration/general"
-        >hosted on Netlify!</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter the city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">London</h1>
+            <p class="weather-app-details">
+              Wednesday, 11:50, cloudy day
+              <br />
+              humidity: <strong>66%</strong>, wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☁️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class=".weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        Coded by
+        <a href="https://github.com/thais-roome" target="_blank"
+          >Thais Roome,</a
+        >
+        <a href="https://github.com/thais-roome/meteo-forecast" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and
+        <a
+          href="https://app.netlify.com/sites/meteo-forecast-weatherapp/configuration/general"
+          target="_blank"
+          >hosted on Netlify!</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
