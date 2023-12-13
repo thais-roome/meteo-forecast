@@ -6,15 +6,32 @@
     <title>Meteo forecast</title>
   </head>
   <body>
-    <header>My weather forecast</header>
+    <header>
+      <form action="">
+        <input type="search" placeholder="Enter the city..." required />
+        <input type="submit" value="search" />
+      </form>
+    </header>
+    <main>
+      <div>
+        <h1>London</h1>
+        <p>
+          Wednesday, 11:50, cloudy day
+          <br />
+          humidity: 66%, wind: 3.13km/h
+        </p>
+      </div>
+      <div>☁️ 12°C</div>
+    </main>
     <footer>
-      Coded by <a href="https://github.com/thais-roome">Thais Roome,</a> code
-      hosted on
-      <a href="https://github.com/thais-roome/meteo-forecast">GitHub</a> website
-      hosted on
+      Coded by <a href="https://github.com/thais-roome">Thais Roome,</a>
+      <a href="https://github.com/thais-roome/meteo-forecast">
+        open-sourced on GitHub</a
+      >
+      and
       <a
         href="https://app.netlify.com/sites/meteo-forecast-weatherapp/configuration/general"
-        >Netlify!</a
+        >hosted on Netlify!</a
       >
     </footer>
   </body>
